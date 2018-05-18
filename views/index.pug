@@ -1,0 +1,21 @@
+doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        title #{title}
+        link(rel='stylesheet', href='./css/index.css')
+
+    body
+        h1 #{title}
+        p
+            | Simple Photo Storage Application in Express
+        p
+            a(href='/upload') Upload
+        .photos
+            each photo in photos
+                .photo
+                    h2 #{photo.name}
+                    a(href='/photo/'+photo.id+'/view')
+                        img(src='/photos/'+photo.path title=photo.name)
+                    div
+                        a(href='/photo/'+photo.id+'/download' class='download') Download
