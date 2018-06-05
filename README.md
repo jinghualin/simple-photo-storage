@@ -1,4 +1,7 @@
 # simple-photo-storage
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jinghualin/simple-photo-storage.svg)](https://greenkeeper.io/)
+
 A simple nodejs express application for save and download photos
 
 
